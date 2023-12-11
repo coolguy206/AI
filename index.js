@@ -13,7 +13,7 @@ var test = async () => {
     //? IMAGE GENERATION
     const response = await openai.images.generate({
         model: "dall-e-3",
-        prompt: "logo for body building website",
+        prompt: "image of happy kids eating cookies to sell cookies",
         n: 1,
         size: "1024x1024",
     });
@@ -28,7 +28,7 @@ var test = async () => {
     //     response_format: { type: "json_object" },
     //     messages: [
     //         { "role": "system", "content": "You are a helpful assistant that output JSON." },
-    //         { "role": "user", "content": "can you write a paragraph to sell girls dresses?" },
+    //         { "role": "user", "content": "can you write a paragraph help sell cookies for a school fundraiser?" },
     //     ]
     // });
 

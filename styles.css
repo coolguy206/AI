@@ -1,0 +1,161 @@
+@font-face {
+  font-family: borel;
+  src: url(Borel-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 1680px;
+  margin: 4vw auto;
+  text-align: center;
+}
+@media screen and (max-width: 430px) {
+  .wrap {
+    margin: 10vw auto;
+  }
+}
+.wrap h1 {
+  margin: 0 0 1vw;
+}
+@media screen and (max-width: 820px) {
+  .wrap h1 {
+    margin: 0 0 4vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .wrap h1 {
+    margin: 0 0 10vw;
+  }
+}
+.wrap .tabs {
+  list-style: none;
+  display: inline-flex;
+}
+.wrap .tabs li {
+  border: 1px solid;
+  padding: 1vw;
+  border-radius: 1vw 1vw 0 0;
+  border-bottom: none;
+  background: blue;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 430px) {
+  .wrap .tabs li {
+    padding: 5vw;
+    border-radius: 5vw 5vw 0 0;
+  }
+}
+.wrap .tabs li.active {
+  background: #fff;
+  color: #000;
+}
+.wrap .tabs li:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+.wrap .user-input-container {
+  display: flex;
+  justify-content: center;
+}
+.wrap .user-input-container div.text, .wrap .user-input-container div.image {
+  border: 1px solid;
+  padding: 1vw;
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 820px) {
+  .wrap .user-input-container div.text, .wrap .user-input-container div.image {
+    padding: 4vw;
+  }
+}
+.wrap .user-input-container div.text.active, .wrap .user-input-container div.image.active {
+  display: block;
+}
+.wrap .user-input-container div.text .loading, .wrap .user-input-container div.image .loading {
+  display: none;
+  margin: 1vw 0;
+}
+.wrap .user-input-container div.text .loading span, .wrap .user-input-container div.image .loading span {
+  display: block;
+  margin: 0 0 1vw 0;
+}
+.wrap .user-input-container div.text h2,
+.wrap .user-input-container div.text h3, .wrap .user-input-container div.image h2,
+.wrap .user-input-container div.image h3 {
+  margin: 0 0 1vw;
+}
+@media screen and (max-width: 820px) {
+  .wrap .user-input-container div.text h2,
+  .wrap .user-input-container div.text h3, .wrap .user-input-container div.image h2,
+  .wrap .user-input-container div.image h3 {
+    margin: 0 0 4vw;
+  }
+}
+.wrap .user-input-container div.text h2, .wrap .user-input-container div.image h2 {
+  font-family: borel;
+}
+@media screen and (max-width: 430px) {
+  .wrap .user-input-container div.text h3, .wrap .user-input-container div.image h3 {
+    text-align: left;
+  }
+}
+.wrap .user-input-container div.text .the-form, .wrap .user-input-container div.image .the-form {
+  display: inline-block;
+}
+@media screen and (max-width: 430px) {
+  .wrap .user-input-container div.text .the-form, .wrap .user-input-container div.image .the-form {
+    display: block;
+  }
+}
+.wrap .user-input-container div.text .the-form input, .wrap .user-input-container div.image .the-form input {
+  width: 600px;
+  height: 45px;
+  padding: 0 0 0 1vw;
+  box-sizing: border-box;
+  display: block;
+}
+@media screen and (max-width: 430px) {
+  .wrap .user-input-container div.text .the-form input, .wrap .user-input-container div.image .the-form input {
+    width: 80%;
+  }
+}
+.wrap .user-input-container div.text .the-form button, .wrap .user-input-container div.image .the-form button {
+  display: block;
+  margin: 1vw 0;
+  width: 180px;
+  height: 45px;
+  border-radius: 0;
+  box-shadow: none;
+  background: blue;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 820px) {
+  .wrap .user-input-container div.text .the-form button, .wrap .user-input-container div.image .the-form button {
+    margin: 4vw 0;
+  }
+}
+.wrap .user-input-container div.text .the-form button:hover, .wrap .user-input-container div.image .the-form button:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid blue;
+  color: blue;
+}
+.wrap .user-input-container div.text .results, .wrap .user-input-container div.image .results {
+  white-space: pre-line;
+}
+.wrap .user-input-container div.text .results {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}

@@ -1,0 +1,4 @@
+PATH=$PATH":/c/Users/david.thanphilom/AppData/Roaming/npm"
+
+TO RUN BROWSERIFY
+browserify scripts.js > scripts.min.js
